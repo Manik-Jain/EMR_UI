@@ -1,0 +1,63 @@
+<div>
+  <!-- <app-login></app-login> -->
+  <div class="row">
+      <div class="col-md-2">
+          <!-- <app-sidebar></app-sidebar> -->
+
+      </div>
+
+      <div class="col-md-8">
+          <div class="row">
+              <!-- <app-login></app-login> -->
+
+          </div>
+
+          <div class="row">
+              <!-- <router-outlet></router-outlet> -->
+<div>
+                            
+  <table class="table table-condensed table-dark">
+          <caption>Patient Audit Trail</caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Type</th>
+              <th scope="col">Attribute</th>
+              <th scope="col">previous Value</th>
+              <th scope="col">new Value</th>
+              <th scope="col">changed By</th>
+              <th scope="col">updated on</th>
+            </tr>
+          </thead>
+          <tbody>
+             <tr *ngFor="let entry of patientAudit">
+                              
+              <th scope="row"> <a href="#"> {{entry.entityId}} </a> </th>
+              <td>{{entry.entityType}}</td>
+              <td>{{entry.attributeUpdated}}</td>
+              <td>{{entry.previousValue}}</td>
+              <td>{{entry.newValue}}</td>
+              <td>{{entry.changedBy}}</td>
+              <td>{{entry.updatedOn}}</td>
+              </tr>
+            
+
+          </tbody>
+        </table>
+
+
+</div>
+
+<!-- <div class="col-md-2">
+                <div class="row">
+                        <app-login></app-login>
+                </div>
+    
+                <hr>
+    
+                <div class="row">
+                        <app-login></app-login>
+                </div>
+            </div> -->
+          </div>
+        </div>

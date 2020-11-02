@@ -1,0 +1,21 @@
+<div style="width:800px; margin:0 auto;">
+    <form aligned = "center">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="User name" [(ngModel)]="userName" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="col">
+            <input type="password" class="form-control" placeholder="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="col">
+            <button type="submit" class="btn btn-primary" [disabled]="shouldEnableLoginButton()" (click)="userHasLoggedIn()">Login</button>
+          </div>
+
+        </div>
+      </form>
+
+</div>
+          
+
+ 
+    

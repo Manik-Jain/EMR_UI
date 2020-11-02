@@ -1,0 +1,67 @@
+<div>
+        <!-- <app-login></app-login> -->
+        <div class="row">
+            <div class="col-md-2">
+                <!-- <app-sidebar></app-sidebar> -->
+
+            </div>
+    
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- <app-login></app-login> -->
+    
+                </div>
+    
+                <div class="row">
+                    <!-- <router-outlet></router-outlet> -->
+                    <div>
+                            
+                            <table class="table table-condensed table-dark">
+                                    <caption>List of Admins</caption>
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">DOB</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Status</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr *ngFor="let admin of admins">
+                                                        
+                                        <th scope="row"> <a href="#"> {{admin.id}} </a> </th>
+                                        <td>{{admin.first_name}}</td>
+                                        <td>{{admin.last_name}}</td>
+                                        <td>{{admin.dob}}</td>
+                                        <td>{{admin.email}}</td>
+                                        <td>{{admin.status}}</td>
+                                        </tr>
+                                      
+
+                                    </tbody>
+                                  </table>
+                        
+                        
+                        </div>
+                </div>
+            </div>
+    
+            <!-- <div class="col-md-2">
+                <div class="row">
+                        <app-login></app-login>
+                </div>
+    
+                <hr>
+    
+                <div class="row">
+                        <app-login></app-login>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
