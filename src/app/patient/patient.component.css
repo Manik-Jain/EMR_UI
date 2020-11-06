@@ -1,0 +1,18 @@
+.example-container {
+    /* width: 400px;
+    height: 200px; */
+    margin: 10px;
+    border: 1px solid #555;
+  }
+
+th {
+    color : blueviolet; 
+}
+
+td { 
+    color : cornsilk;
+}
+
+  /* .example-stretched-tabs {
+  max-width: 800px;
+} */

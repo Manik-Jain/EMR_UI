@@ -1,0 +1,47 @@
+<!-- <mat-form-field appearance="outline">
+    <mat-label>Outline form field</mat-label>
+    <input matInput placeholder="Placeholder">
+    <mat-hint>Hint</mat-hint>
+</mat-form-field> -->
+
+<form class="example-container" [formGroup]="patientInfoForm" (ngSubmit)="savePatientInfo()">
+  <mat-form-field appearance="fill">
+    <mat-label>First Name</mat-label>
+    <input matInput type="string" [formControl]="patientInfoForm.get('firstName')">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Last Name</mat-label>
+    <input matInput type="string" [formControl]="patientInfoForm.get('lastName')">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput type="string" [formControl]="patientInfoForm.get('email')">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Contact Number</mat-label>
+    <input matInput type="number" [formControl]="patientInfoForm.get('contactNumber')">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Date of Birth</mat-label>
+    <input matInput type="string" [formControl]="patientInfoForm.get('dob')">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Age</mat-label>
+    <input matInput type="number" [formControl]="patientInfoForm.get('age')">
+  </mat-form-field>
+
+  <br>
+  
+    <button mat-raised-button color="primary">Save</button>
+    <button mat-raised-button>Cancel</button>
+
+</form>

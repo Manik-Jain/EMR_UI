@@ -1,41 +1,6 @@
-<ul class="nav nav-pills nav-stacked">
-        <a href="#" class="list-group-item disabled">
-            Recent Mined Trends
-        </a>
-    
-        <li role="presentation" class="active">
-            <a href="#">
-                <blockquote>
-                    <p>*Home</p>
-                    <!-- <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                    <span><small>Manik jain</small></span> -->
-                    <footer>Manik jain</footer>
-                </blockquote>
-    
-            </a>
-        </li>
-    
-        <li role="presentation" class="active">
-            <a href="#">
-                <blockquote>
-                    <p>*Home</p>
-                    <!-- <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        <span><small>Manik jain</small></span> -->
-                    <footer>Manik jain</footer>
-                </blockquote>
-    
-            </a>
-        </li>
-    
-        <li role="presentation" class="active">
-            <a href="#">
-                <blockquote>
-                    <p>*Home</p>
-                    <!-- <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            <span><small>Manik jain</small></span> -->
-                    <footer>Manik jain</footer>
-                </blockquote>
-    
-            </a>
-        </li>
-    </ul>
+<mat-selection-list #operations [multiple]="false">
+    <mat-list-option *ngFor="let operation of allowedOperations" [value]="operation">
+      <h1>{{operation}}</h1>
+    </mat-list-option>
+  </mat-selection-list>      
+      
